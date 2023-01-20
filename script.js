@@ -4,6 +4,13 @@
 //     showProduct();
 // }
 
+var logo = document.querySelector(".container");
+var menu = document.querySelector(".menu-2");
+
+logo.addEventListener('click', function(){
+    menu.classList.toggle('showmenu')
+})
+
 showProduct();
 
 function showProduct() {

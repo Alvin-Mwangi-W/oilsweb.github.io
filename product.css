@@ -69,6 +69,8 @@ input::placeholder {
     font-size: 20px;
     margin-left: 20%;
 }
+
+/* -----------------------------ham-menu----------------------------- */
 .main-menu {
     margin-top: 10%;
     margin-right: 0;
@@ -97,21 +99,6 @@ hr{
     width: 75%;
     margin-left: 10%;
 }
-
-
-/* .search input[type=text]{
-    width:300px;
-    height:30px;
-    border-radius:25px;
-    border: none;
-    background-color: rgb(138, 133, 133);
-    background-image: url('/assets/icon.png');
-    background-position: 260px 0px; 
-    background-repeat: no-repeat;
-    margin-left: 50%;
-    margin-top: 50px;
-} */
-     
 
 
 .container {
@@ -164,7 +151,7 @@ hr{
 }
 
 
-/* Carousel */
+/* -----------------------------carousel----------------------------- */
 
 .carousel {
     position: relative;
@@ -268,5 +255,90 @@ button:hover {
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 768px) {
+    .form-group {
+        display: none;
+    }
+    .nav {
+        height: 100px;
+        width: 300px;
+        background-color: #075B26;
+        border-radius: 0 0 3em 0;
+        align-items: center;
+        float: left;
+    }
+    .nav span{
+        position: relative;
+        margin: 60px 0 20px 60px;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    .form-group {
+        position: hidden;
+    }
+    .form-group .fa{
+        margin-left: 10px;
+        align-self: center;
+    }
+    .form-group .form-control {
+        width: 300px;
+        position: relative;
+        margin: 10px 20px 20px 10px;
+        border: none;
+        resize: none;
+        outline: none;
+        background-color: rgb(184, 179, 179);
+    }
+    input.empty {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+    }
+    input::placeholder {
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    .main-menu {
+        margin-top: 10%;
+        margin-right: 0;
+        margin-top: 0px;
+        position: relative;
+    }
+      
+      /* text */
+    
+    .text {
+        align-items: center;
+        align-self: center;
+    }
+    .text span{
+        font-size: 40px;
+        font-weight: 200;
+        color: #075B26;
+    }
+    .text h2 {
+        align-self: center;
+        text-align: center;
+        font-weight: 80;
+        color: black;
+    }
+    hr{
+        width: 75%;
+        margin-left: 10%;
+    }
+    
+    /* .search input[type=text]{
+        width:300px;
+        height:30px;
+        border-radius:25px;
+        border: none;
+        background-color: rgb(138, 133, 133 
+        );
+        margin-left: 50%;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 1;
 
-  
+    } */
+}
