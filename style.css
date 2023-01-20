@@ -264,4 +264,8 @@ li a {
         font-weight: bold;
   }
 
+  .main-body a {
+    margin-left: 0;
+  }
+
 }
