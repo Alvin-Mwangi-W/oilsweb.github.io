@@ -65,6 +65,10 @@ li a {
     margin-top: 30px;
 }
 
+.product-link {
+    display: none;
+}
+
 /* body */
 .main-body { 
     position: absolute;
@@ -269,5 +273,10 @@ li a {
     align-items: center;
     padding: 15px 40px;
   }
+
+  .product-link {
+    text-decoration: none;
+    color: black;
+}
 
 }
