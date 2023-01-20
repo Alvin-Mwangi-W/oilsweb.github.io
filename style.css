@@ -265,7 +265,9 @@ li a {
   }
 
   .main-body a {
-    margin-left: 0;
+    align-self: center;
+    align-items: center;
+    padding: 15px 40px;
   }
 
 }
