@@ -2,128 +2,199 @@
 .top-btn a {
     margin: 30px 0 0 0;
     padding: 50px 70px;
-    background-color: #075B26;
+    background-color: #075b26;
     border-radius: 0 5rem 5rem 0;
     border: none;
     color: black;
     font-size: 29px;
 }
-.top-btn a:hover{
-    background-color: #075B26;
+
+.top-btn a:hover {
+    background-color: #075b26;
     color: white;
 }
-input::-webkit-input-placeholder { /* Edge */
+
+input::-webkit-input-placeholder {
+    /* Edge */
     font-size: 20px;
     margin-left: 30px;
 }
-  
-input:-ms-input-placeholder { /* Internet Explorer */
+
+input:-ms-input-placeholder {
+    /* Internet Explorer */
     font-size: 20px;
-    margin-left: 30px;;
+    margin-left: 30px;
 }
-  
+
 input::placeholder {
     font-size: 20px;
     margin-left: 30px;
 }
-.content{
-    width: 40%;
-    float: left;
-}
-.footer{
-    float: bottom;
-    position: static;
-    align-self: auto;
-    align-items: center;
-}
-.images {
-    width: 60%;
-    height: 90%;
-    margin-left: 40%;
-    margin-top: 0;
-    position: absolute;
-    border-color: black;
+
+.main-body {
+    width: 100%;
+    height: 100%;
     display: flex;
-    display: inline-flex;
-    background-color: #FFE5B4;
-    overflow: hidden;
-}
-.images .image-box{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    margin: 6% 5% 10% 10% ;
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    cursor: pointer;
-    border-radius: 1em / .5em;
-}
-.image-box2{
-    position: absolute;
-    width: 250px;
-    height: 300px;
-    margin-top: 280px;
-    margin-left: 270px;
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.images .image-box img{
-    width: 250px;
-    height: 300px;
-}.image-box2 img{
-    width: 300px;
-    height: 350px;
+    /* align-items: center;
+    align-content: center; */
+    flex-shrink: 0;
+
 }
 
-.content {
+.main-body .left-side-div {
+    /* margin: 2.9rem 1.95rem 2.5rem 0rem; */
+    width: 50%;
+    height: calc(100% - 5.4rem);
     align-items: center;
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
-.content p{
-    font-size: 25px;
-    font-weight: 550;
+
+.main-body .left-side-div .tag {
+    margin: 0rem 29.65rem 0.65rem 0rem;
+    width: 35%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2175;
+    text-transform: capitalize;
+    color: #0d2016;
+    font-family: Montserrat, "Source Sans Pro";
+    white-space: nowrap;
+    background-color: #075b26;
+    border-radius: 0 9rem 9rem 0;
+    flex-shrink: 0;
 }
-.content button{
-    position: relative;
-    height: 70px;
+
+.main-body .left-side-div .text-1 {
+    margin: 0rem 0rem 6.65rem 7.55rem;
+    max-width: 55.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.2175;
+    text-transform: capitalize;
+    color: #0d2016;
+    font-family: Montserrat, "Source Sans Pro";
+    flex-shrink: 2;
+}
+
+.main-body .left-side-div .text-2 {
+    margin: 0rem 0rem 2.1rem 6.15rem;
+    max-width: 51.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #0d2016;
+    font-family: Montserrat, "Source Sans Pro";
+    /* flex-shrink: 0; */
+}
+.main-body .left-side-div .button {
     width: 200px;
-    margin-top: 60px;
-    border-radius: 3em;
+    text-align: center;
+    border: 3px solid #075b26;
+    border-color: #075b26;
+    border-radius: 5em;
 }
-.btn-outline-success {
-    margin-left: 10px;
-}
-.btn-outline-success a {
+.main-body .left-side-div .button span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2175;
+    text-transform: capitalize;
+    font-family: Montserrat, "Source Sans Pro";
     text-decoration: none;
-    color: black;
+    padding: 1.5rem 1.5rem;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
 }
-.btn-outline-success a:hover {
+.main-body .left-side-div .button span a {
+    color: #075b26;
     text-decoration: none;
-    color: white;
 }
-.btn-outline-success a:visited {
+.main-body .left-side-div .button span:hover {
+    width: 152.9px;
+    color: #fff;
+    background-color: #075b26;
+    border-color: #075b26;
+    border-radius: 5em;
+}
+.main-body .left-side-div .button span:hover a {
+    color: #fff;
     text-decoration: none;
-}
-.content button:hover{
-    background-color: #075B26;
 }
 
-.footer{
+
+
+/* ------------------right side div-------------- */
+.main-body .right-side-div {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    margin-left: 50%;
+    margin-bottom: 0;
+    background-color: #ffe5b4;
+}
+
+.main-body .right-side-div .polygon-1 {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    left: 3rem;
+    top: 2.9rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 3rem;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.main-body .right-side-div .polygon-2 {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    left: 12.0rem;
+    top: 16.3rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 3rem;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.main-body .right-side-div .polygon-3 {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    left: 20.4rem;
+    top: 2.9rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 3rem;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+/* ------------------footer---------------------- */
+
+.footer {
     width: 100%;
     height: 60px;
-    margin-top: 35%;
+    margin-top: 0;
     z-index: 5;
     align-items: baseline;
 }
 
-.footer p{
+.footer p {
     position: inherit;
     display: inline-block;
     padding-left: 90px;
@@ -131,9 +202,72 @@ input::placeholder {
     font-size: 20px;
 }
 
-/* -----------------------------Products----------------------------- */
+
+/* ------------------media query---------------------- */
 
 
-  
-  /* text */
-
+@media screen and (max-width: 768px) {
+    .main-body {
+        width: 100%;
+    }
+    .main-body .right-side-div {
+        display: none;
+    }
+    .main-body .left-side-div .tag{
+        width: 270vw;
+        height: 100px;
+        font-size: medium;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-left: 90%;
+    }
+    
+    .main-body .left-side-div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .main-body .left-side-div .text-1 {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .main-body .left-side-div .text-2 {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .main-body .left-side-div .button {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .main-body .left-side-div .button span {
+        padding: 1.5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .main-body .left-side-div .button span:hover {
+        width: 152.9px;
+        color: #fff;
+        background-color: #075b26;
+        border-color: #075b26;
+        border-radius: 5em;
+    }
+    .main-body .left-side-div .button span:hover a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .footer p {
+        padding-left: 0;
+    }
+}
