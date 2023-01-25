@@ -72,7 +72,7 @@ input::placeholder {
 
 /* -----------------------------ham-menu----------------------------- */
 .main-menu {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-right: 0;
     margin-top: 0px;
     position: relative;
@@ -181,18 +181,18 @@ ul li{
     opacity: 1;
 }
 .products > ul{
-    margin-left: 5%;
+    width: 95%;
     display: inline-block;
 }
 .product-card{
     height: 350px;
-    width: 300px;
+    width: 250px;
     align-items: center;
-    background-color: #075B26;
+    background-color: rgb(233, 248, 17);
 }
 .product-card img{
     height: 300px;
-    width: 300px;
+    width: 250px;
     margin-top: 25px;
 }
 .product-desc {
